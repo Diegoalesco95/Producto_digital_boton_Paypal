@@ -9,7 +9,7 @@
 /* Espaciados */
 --space:10px;
 /* Box shadow */
---box:0 0 1px #e6e5e9;
+--box:0 0 1px #b7b7b8;
 }
 /* Variables */
 
@@ -93,4 +93,26 @@ color: var(--white-color);
 
 .main_button:hover{
   background-color: #5e9e22;
+}
+
+/* Categories Section */
+
+.categories{
+  padding: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.category{
+  padding: 25px;
+  height: auto;
+}
+
+.category .content{
+  background-color: var(--white-color);
+  padding: 20px;
+}
+
+.category .content, p, h2 {
+  text-align: center;
 }
