@@ -19,7 +19,7 @@ html, body {
   font-family: 'Open Sans', sans-serif;
   color: var(--black-color);
 }
-p {
+p, label {
   font-size: var(--normal);
 }
 
@@ -144,9 +144,17 @@ h2.mention_title {
   width: 100%;
   margin: auto;
 }
-
-
-
+.data {
+  margin-top: var(--space);
+  width: 100%;
+  height: 35px;
+  border-radius: 2px;
+  border: 1px solid var(--black-color);
+  box-sizing: border-box;
+}
+.modulo_pago .main_btn{
+  margin-top: 10px;
+}
 
 
 
