@@ -1,164 +1,142 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
-/* Variables */
-:root{
+/* Variables ------------------------------------------*/
+:root {
 --green-color:#7ACC2D;
---white-color:white;
 --black-color:#313337;
-/* Tipografia */
+--white-color:white;
+/* Tipografia----------------------------------------- */
 --normal:12px;
-/* Espaciados */
+/* Espaciados----------------------------------------- */
 --space:10px;
-/* Box shadow */
+--space2:20px;
+/* Box shadow----------------------------------------- */
 --box:0 0 5px #b7b7b8;
 }
-/* Variables */
-
-html, body{
-  padding: 0px;
+/* Variables ------------------------------------------*/
+html, body {
   margin: 0px;
+  padding: 0px;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--black-color);
+}
+p {
   font-size: var(--normal);
-  font-family: 'Open Sans', sans-serif;;
 }
 
-/* Nav bar */
-
-nav{
+/* Nav bar ------------------------------------------ */
+nav {
   display: flex;
-  background-color: var(--green-color);
-  padding: var(--space);
-  color: var(--white-color);
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  padding: var(--space);
+  min-height: 60px;
+  background-color: var(--green-color);
 }
-
-nav ul{
+nav a {
+  text-decoration: none;
+  color: var(--black-color);
+  font-size: var(--normal);
+}
+nav a:hover {
+  color: var(--white-color);
+}
+nav ul {
   display: flex;
 }
-
-nav li{
+nav ul li {
   padding-left: 20px;
   list-style: none;
 }
-
-nav li a{
-  color: var(--black-color);
-  text-decoration: none ;
+hr {
+  opacity: .2;
 }
 
-nav li a:hover{
-color: var(--white-color);
-}
-
-/* Main Section */
-
+/* Main Section -------------------------------------*/
 .main_section{
+  text-align: center;
   padding: 15%;
-  text-align: center;
 }
 
-.products{
+/* Products Section ---------------------------------*/
+.products {
   background-image: url(../images/curve.png);
-  max-height: 50px;
-  background-size: cover;
+  padding: 15%;
   background-position: center top;
-  padding: 20%;
-  display: flex
+  background-repeat: no-repeat;
+  display: flex;
+  height: 95px;
+  background-size: cover;
 }
-
-.product{
-  padding: var(--space);
-  margin-top: -240px;
+.product {
+  padding: 20px;
+  margin-top: -226px;
 }
-
-.product .content{
-  background-color: var(--white-color);
-  padding: 15px;
-  box-shadow: var(--box);
-}
-
-.image_content{
+.image-product {
   text-align: center;
 }
-
-.main_button{
+.content {
+  padding: 20px;
+  background-color: var(--white-color);
+  border-radius: 3px;
+  box-shadow: 0px 0 2px 1px #e6e5e9;
+}
+.main_btn {
+  padding: var(--space);
   background-color: var(--green-color);
   width: 100%;
-  padding: var(--space);
-  font-size: 17px;
-  color: var(--white-color);
-  border: 0;
-  cursor: pointer;
+  border: 0px;
   border-radius: 2px;
+  cursor: pointer;
+  color: var(--white-color);
+}
+.main_btn:hover {
+  background-color: #63a426;
 }
 
-.main_button:hover{
-  background-color: #5e9e22;
-}
-
-/* Categories Section */
-
-.categories{
-  padding: 5%;
+/* Beneficios Section -------------------------------*/
+.beneficios {
+  padding: 10%;
   display: flex;
-  justify-content: center;
 }
-
-.category{
-  padding: 25px;
-  height: auto;
-}
-
-.category .content{
-  background-color: var(--white-color);
+.beneficio {
+  text-align: center;
   padding: 20px;
 }
-
-.category p, h2 {
-  text-align: center;
+.beneficio img {
+  max-height: 100px;
 }
-
-.image_content img{
-  width: 100px;
+.text_beneficio {
+  text-align: justify;
 }
 
 /* Mentions Section */
-
 .mentions{
-  padding: 1%;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.mentions_content{
   padding: 5%;
+}
+.mention img {
+  width: 100%;
+}
+h2.mention_title {
+  text-align: center;
+}
+.mention {
+  padding: var(--space);
+}
+.content_mention {
+  box-shadow: 0px 0 2px 1px #e6e5e9;
+}
+.mention .text {
+  padding: var(--space);
+}
+
+/*  Footer ----------------------------------------- */
+footer{
   display: flex;
-}
-
-.mention{
-  padding: 10px;
-  height: auto;
-  width: 239px;
-  display: flex;
-  overflow: hidden;
-  justify-content: right;
-}
-
-.mention .content{
-  background-color: var(--white-color);
-  width: auto;
-  box-shadow: var(--box);
-}
-
-.mention .content .img{
-  flex-shrink: 0;
-  object-fit: cover;
-}
-
-.mention_texto{
-  padding: 10px;
-}
-
-.mention_texto p, h3 {
-  text-align: left;
+  justify-content: space-between;
+  font-size: var(--normal);
+  background-color: var(--black-color);
+  padding: var(--space);
+  color: var(--white-color);
 }
