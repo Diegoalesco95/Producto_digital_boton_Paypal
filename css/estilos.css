@@ -28,7 +28,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   padding: var(--space);
   min-height: 60px;
   background-color: var(--green-color);
@@ -136,7 +135,7 @@ h2.mention_title {
 .modulo_pago {
   background-color: var(--white-color);
   box-shadow: var(--box);
-  padding: var(--space);
+  padding: var(--space-2);
 }
 .modulo_pago_images {
   max-width: 150px;
@@ -156,11 +155,6 @@ h2.mention_title {
   margin-top: 10px;
 }
 
-
-
-
-
-
 /*  Footer ----------------------------------------- */
 footer{
   display: flex;
@@ -169,4 +163,8 @@ footer{
   background-color: var(--black-color);
   padding: var(--space);
   color: var(--white-color);
+}
+
+.contact a{
+  color: var(--green-color);
 }
